@@ -1,7 +1,7 @@
 # 6.30相关问题总结
 # 关于final是什么
 final指的是一个指针常量，类似与C语言的int* const, 不能修改它的指向，但能修改它指向的内容
-如下面代码[^1]
+如下面代码,可以修改final指向内容的[^1]
 ```java
 public class Lambda {
 	static class A {
@@ -85,3 +85,6 @@ static void func(Book book) {
 	});
 }
 ```
+
+# 参考资料
+[java为什么匿名内部类的参数引用时final？](https://www.zhihu.com/question/21395848)
